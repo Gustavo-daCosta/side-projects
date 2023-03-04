@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+/* Reset de propriedades */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Configurações gerais */
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+::placeholder { color: #767676; }
+
+textarea:focus, input:focus { outline: none; }
+
+/* TOP HEADER */
+#top-header {
+  height: 45px;
+  background-color: rgb(255, 255, 100);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#search-box {
+  width: 220px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 3px;
+  border-radius: 2px;
+}
+
+#search-box input {
+  width: 190px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+#search-box img {
+  width: 20px;
+  height: 20px;
+}
+
+#genius-logo {
+  width: 145px;
+  height: 45px;
+}
+
+#login-area {
+  width: 115px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#login-area button{
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* BOTTOM HEADER */
+#bottom-header {
+  height: 45px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottom-header nav {
+  display: flex;
+  align-items: center;
+}
+
+#bottom-header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 1px;
+}
+
+.vertical-line {
+  height: 15px;
+  border-left: 1px solid white;
+  margin: 0 40px;
+}
+
+#social-media {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  bottom: 1px;
+}
+
+#social-media img {
+  width: 20px;
+  height: 20px;
+}
