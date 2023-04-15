@@ -12,6 +12,7 @@
 :root {
     --cor-primaria: rgb(225, 225, 230);
     --cor-secundaria: rgb(165, 162, 175);
+    --cor-de-fundo: rgb(42, 33, 65);
     --fonte: 'Roboto', sans-serif;
 }
 
@@ -33,7 +34,7 @@
 /* MAIN */
 main {
     height: 100vh;
-    background-color: rgb(42, 33, 65);
+    background-color: var(--cor-de-fundo);
     color: var(--cor-primaria);
     display: flex;
     justify-content: center;
@@ -41,25 +42,32 @@ main {
 }
 
 main .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+main .banner img {
     width: 70vw;
     height: 70vw;
 }
 
-main .title {
+.banner .banner-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 60px;
 }
 
-.title .music-name {
+.banner-info .music-name {
     font-family: var(--fonte);
     font-weight: bold;
     font-size: 30px;
     letter-spacing: 0.5px;
 }
 
-.title .artist-name {
+.banner-info .artist-name {
     font-family: var(--fonte);
     font-weight: 100;
     font-size: 22px;
@@ -115,4 +123,60 @@ main .time-stamp {
 .time-stamp .time-label p {
     color: var(--cor-secundaria);
     font-family: var(--fonte);
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .grid-layout { width: 50vw; }
+
+    .banner-flex { height: 85vh; }
+
+    main .banner { margin: 0 auto; }
+    main .banner img {
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .banner .banner-info .music-name { font-size: 48px; }
+    .banner .banner-info .artist-name { font-size: 28px; }
+
+    .action-buttons button img {
+        height: 60px;
+        width: 60px;
+    }
+
+    main .time-stamp { height: 60px; }
+    .time-stamp #progress-bar { height: 18px; }
+    .time-stamp .time-label p { font-size: 26px; }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    main {
+        background-color: rgb(15, 13, 19);
+    }
+
+    .grid-layout { padding: 5vh 8vw; }
+
+    
+    .banner-flex {
+        background-color: var(--cor-de-fundo);
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        /* border: 2px solid yellow; */
+    }
+    
+    main .banner {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .banner .banner-info {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }

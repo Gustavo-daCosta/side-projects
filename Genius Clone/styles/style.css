@@ -12,9 +12,20 @@
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.grid-layout {
+  width: 75%;
+  margin: 0 auto;
+  background-color: gainsboro;
+}
+
 ::placeholder { color: #767676; }
 
 textarea:focus, input:focus { outline: none; }
+
+/* HEADER */
+header {
+  margin-bottom: 30px;
+}
 
 /* TOP HEADER */
 #top-header {
@@ -100,7 +111,7 @@ textarea:focus, input:focus { outline: none; }
   bottom: 1px;
 }
 
-.vertical-line {
+.header-divider {
   height: 15px;
   border-left: 1px solid white;
   margin: 0 40px;
@@ -118,4 +129,100 @@ textarea:focus, input:focus { outline: none; }
 #social-media img {
   width: 20px;
   height: 20px;
+}
+
+
+/* NEWS SECTION */
+#news {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#main-news {
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid lightcoral;
+}
+
+#main-news img {
+  height: 300px;
+  position: relative;
+  top: 7px;
+}
+
+#news-label {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#news-label hr {
+  width: 100%;
+  border: 1px solid black;
+  margin: 0 10px;
+}
+
+#news-title {
+  width: 460px;
+  height: 375px;
+}
+
+#news-title h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#news-title h3 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+#news-title p {
+  font-size: 12px;
+}
+
+#news-title span {
+  color: #767676;
+}
+
+/* SECONDARY NEWS */
+#secondary-news { display: flex; }
+
+.news-divider {
+  height: 15px;
+  border-left: 2px solid black;
+  /* margin: 0 40px; */
+}
+
+.news-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.news-box {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 12px;
+  background-color: darkcyan;
+}
+
+.news-box span {
+  color: #767676;
+}
+
+.secondary-news-img {
+  background-image: url(../assets/images/news-banner/newjeans-banner.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 140px;
+  margin-top: 10px;
 }
