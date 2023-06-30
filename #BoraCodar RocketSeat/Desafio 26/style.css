@@ -1,0 +1,99 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Source+Serif+4:wght@400;700&display=swap');
+
+/* Configurações gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+
+/* Variáveis de ambiente */
+:root {
+    --cor-primaria: #FEECE0;
+    --cor-secundaria: #9B6647;
+    --cor-titulo: #58190A;
+    --fonte-titulo: 'Source Serif 4', serif;
+    --fonte-descricao: 'Source Sans 3', sans-serif;
+}
+
+
+/* Dish Section */
+main .dish {
+    height: 50vh;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.dish > img {
+    height: 38vh;
+}
+
+.dish .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+    /* border: 2px solid green; */
+
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
+}
+
+.dish .description h1 { 
+    font-weight: bold;
+    font-size: 72px;
+}
+
+.dish .description h3 {
+    font-weight: normal;
+    font-size: 38px;
+}
+
+.description .portions p {
+    font-weight: normal;
+    font-size: 35px;
+    color: var(--cor-secundaria);
+}
+
+.dish .description .portions {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+
+/* Dish-Details Sections */
+main .dish-details {
+    height: 50vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--cor-primaria);
+}
+
+.dish-details .directions, .dish-details .ingredients {
+    height: 60%;
+}
+
+.dish-details .title {
+    font-family: var(--fonte-titulo);
+    font-size: 38px;
+    display: flex;
+    gap: 15px;
+}
+
+.ingredients .list, .directions .steps {
+    font-family: var(--fonte-descricao);
+    font-size: 28px;
+}
