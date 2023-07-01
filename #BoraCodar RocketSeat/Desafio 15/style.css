@@ -1,0 +1,84 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+/* Configurações gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --roxo-claro: #996DFF;
+    --roxo-escuro: #7C3AED;
+    --fundo-escuro: #0F172A;
+    --cor-titulo-light: #1E293B;
+    --cor-texto-light: #475569;
+    --cor-titulo-dark: #F8FAFC;
+    --cor-texto-dark: #CBD5E1 ;
+}
+
+/* Classes gerais */
+main {
+    margin: 0 10vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .card {
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 0 1vw 0 1vw;
+}
+
+.card .catchphrase {
+    width: 100%;
+    color: var(--roxo-claro);
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card .plan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .plan > * { color: var(--cor-titulo-light); }
+
+.card .plan h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.plan .price .coin, .plan .price .period { font-size: 18px !important; }
+.plan .price .value, .plan .price .period {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card .sign {
+    margin-top: 30px;
+    width: 100%;
+    height: 55px;
+    color: var(--cor-titulo-light);
+    background-color: transparent;
+    border: 1px solid var(--fundo-escuro);
+    border-radius: 4px;
+}
+
+/* COLOCAR HOVER NO BOTÃO E NO CARD */
