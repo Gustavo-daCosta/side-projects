@@ -1,0 +1,63 @@
+/* Configurações gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Main */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Description section */
+main .description {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.description h1 {
+    font-size: 60px;
+    color: #2d2b2b;
+}
+
+.description p {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.description button {
+    width: 35%;
+    height: 60px;
+    border: none;
+    background-color: #ff4f5b;
+    font-size: 18px;
+    color: white;
+
+    transition: width 1s ease-out 100ms;
+}
+
+.description button:hover {
+    width: 40%;
+}
+
+/* Error image */
+main .error-img {
+    animation-duration: 4s;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+    from { margin-bottom: 7%; }
+
+    50% { margin-bottom: -2%; }
+
+    to { margin-bottom: 7%; }
+}
