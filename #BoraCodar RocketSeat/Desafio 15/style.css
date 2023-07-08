@@ -21,6 +21,8 @@
 }
 
 /* Classes gerais */
+body { background-color: #f8fafc; }
+
 main {
     margin: 0 10vw;
     height: 100vh;
@@ -37,17 +39,19 @@ main .card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
+    background-color: white;
     border: 1px solid #E2E8F0;
     border-radius: 10px;
-    padding: 0 1vw 0 1vw;
+    padding: 0 1vw;
 }
 
 .card .catchphrase {
     width: 100%;
     color: var(--roxo-claro);
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -56,6 +60,7 @@ main .card {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card .plan > * { color: var(--cor-titulo-light); }
@@ -79,6 +84,61 @@ main .card {
     background-color: transparent;
     border: 1px solid var(--fundo-escuro);
     border-radius: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
 }
 
 /* COLOCAR HOVER NO BOTÃO E NO CARD */
+
+.card .divider {
+    width: 100%;
+    height: 0;
+    margin: 20px 0;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.459);
+}
+
+.card .details-list {
+    padding-left: 26px;
+    height: 40%;
+    width: 100%;
+}
+
+.card .details-list li {
+    padding-top: 10px;
+    list-style-image: url(assets/check-light.svg);
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ultimate {
+    background-color: var(--fundo-escuro) !important;
+}
+
+.ultimate h2, .ultimate span { color: var(--cor-titulo-dark) !important; }
+.ultimate p { color: var(--cor-texto-dark); }
+
+.ultimate .tag {
+    position: absolute;
+    top: -17px;
+    padding: 4px 15px;
+    border-radius: 6px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: var(--fundo-escuro);
+    background-color: #fba94c;
+    border: 2px solid #fba94c;
+}
+
+.ultimate .sign {
+    background-color: var(--roxo-claro);
+    border: none;
+    color: white;
+}
