@@ -1,0 +1,45 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+/* Exemplo de uso: font-family: 'Titillium Web', sans-serif; */
+
+/* Configurações gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* main */
+main { display: flex; }
+main > * { width: 50vw; }
+
+/* form section */
+main .form-section {
+    height: 100vh;
+}
+
+.form-section .form-flex {
+    height: 100%;
+    margin: 0 9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section .logo { 
+    width: 10vw;
+    align-self: flex-start;
+}
+
+.form-section .title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid green;
+}
+
+.form-section .title h1 {
+    font-size: 32px;
+}
