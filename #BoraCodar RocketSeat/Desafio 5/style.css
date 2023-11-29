@@ -1,0 +1,77 @@
+/* Reset de propriedades */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* Variáveis do projeto */
+:root {
+    --purple-bg: #807ECE;
+    --gray: #2D2A37;
+    --text-white: #EBEBEB;
+    --text-gray: #6B6B6B;
+    --purple-button: #462878;
+    --light-purple-button: #7F45E2;
+}
+
+/* Configurações globais */
+p, h2, button {
+    color: var(--text-white);
+    font-size: 20px;
+}
+
+/* Main Grid Layout */
+.grid-layout {
+    /* border: 2px solid green; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--purple-bg);
+}
+
+/* Calculator body */
+.calculator {
+    background-color: var(--gray);
+    height: 80vh;
+    width: 30vw;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.calculator .editor {
+    height: 25%;
+    /* border: 2px solid white; */
+}
+
+.calculator .pad {
+    /* border: 2px solid blue; */
+    height: 75%;
+}
+
+.pad .row {
+    height: calc(100% / 5);
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row .pad-button {
+    background-color: var(--gray);
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.purple-bg { background-color: var(--purple-button) !important; }
+.extra-purple-bg { background-color: var(--light-purple-button) !important; }
+.purple-text { color: var(--light-purple-button); }
