@@ -1,0 +1,83 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+
+/* Reset de propriedades */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* Variáveis */
+:root {
+    --bg-white: #f7f8f8;
+    --bg-gray: #d1d5d5;
+    --bg-dark-gray: #535460;
+    --text-color: #535460;
+    --hover-text-color: #2c263d;
+}
+
+/* Grid layout */
+.grid-layout {
+
+}
+
+/* Header */
+.header-flex {
+    background-color: var(--bg-gray);
+    height: 18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #aeb1c6;
+}
+
+/* Nav-bar */
+.nav-bar {
+    /* border: 2px solid green; */
+    margin-top: 4vh;
+    display: flex;
+    gap: 1.8vw;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+}
+
+.nav-bar__link {
+    /* border: 2px solid blue; */
+    padding: 5px 10px 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-bar__link > .hover-arrow {
+    visibility: hidden;
+    color: red;
+    font-size: 24px;
+}
+
+.nav-bar__link:hover > .hover-arrow {
+    visibility: visible;
+    animation: arrowAnimation .2s ease-in-out;
+}
+
+.special-link {
+    background-color: #e7e7e7;
+}
+
+.special-link:hover {
+    animation: specialLinkAnimation .2s ease-in-out;
+}
+
+.special-link .hover-arrow {
+    visibility: visible;
+}
+
+@keyframes arrowAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes specialLinkAnimation {
+    100% { background-color: var(--bg-gray); }
+} /* CORRIGIR ANIMAÇÃO */
