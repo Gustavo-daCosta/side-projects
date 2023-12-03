@@ -1,0 +1,8 @@
+/* Reset de propriedades */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* Grid Layout */
+.grid-layout { width: 70vw; }
