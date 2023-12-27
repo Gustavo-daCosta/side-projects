@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid blue;
+}
+
+section { position: relative; }
+
+.absolute {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+img {
+    position: fixed;
+    right: 20%;
+    top: 15vh;
+    height: 70vh;
+    width: 15%;
+}
+
+h1 {
+    position: fixed;
+    top: 35vh;
+    left: 7%;
+    font-size: 128px;
+}
+
+#first {
+    background-color: blue;
+    z-index: 0;
+}
+
+#second {
+    background-color: red;
+    z-index: 5;
+}
+
+#third {
+    background-color: green;
+}
+
+#fourth {
+    background-color: goldenrod;
+}

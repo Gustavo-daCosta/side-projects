@@ -94,3 +94,9 @@ main {
 .topics .topics__card img {
     height: 50%;
 }
+
+/* Courses article */
+.courses {
+    border: 2px solid blue;
+    width: 100%;
+}
