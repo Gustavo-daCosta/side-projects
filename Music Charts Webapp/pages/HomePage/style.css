@@ -1,0 +1,96 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Exemplo de uso das fontes:
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+/* Reset de configurações */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* Variáveis */
+:root {
+    --barn-red: #691e06ff;
+    --sienna: #8f250cff;
+    --midnight-green: #1e555cff;
+    --earth-yellow: #dbad6aff;
+    --columbia-blue: #cce6f4ff;
+    --bege: #E9CEA6;
+}
+
+html {
+    background-color: var(--midnight-green);
+}
+
+/* Header */
+header {
+    margin: 2vh 2vh 0;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    /* background-color: var(--earth-yellow); */
+    background: radial-gradient(var(--earth-yellow), var(--bege));
+}
+
+/* Main */
+main {
+    height: 66vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+main .form {
+    font-family: 'Poppins', sans-serif;
+    color: var(--barn-red);
+    background: radial-gradient(var(--earth-yellow), var(--bege));
+    width: 50%;
+    height: 60%;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 20px;
+}
+
+.form input {
+    width: 80%;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 2px solid var(--sienna);
+    background-color: var(--earth-yellow);
+    color: var(--barn-red);
+    outline: none;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form input::placeholder {
+    color: rgba(143, 36, 12, 0.459);
+}
+
+.form button {
+    width: 60%;
+    font-size: 24px;
+    padding: 10px 0;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--columbia-blue);
+    background-color: var(--sienna);
+    border: 2px solid var(--barn-red);
+    border-radius: 15px;
+}
