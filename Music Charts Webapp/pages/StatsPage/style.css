@@ -1,0 +1,82 @@
+/* Import de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Reset de configurações */
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+/* Variáveis */
+:root {
+    --barn-red: #691e06ff;
+    --sienna: #8f250cff;
+    --midnight-green: #1e555cff;
+    --earth-yellow: #dbad6aff;
+    --columbia-blue: #cce6f4ff;
+    --bege: #E9CEA6;
+}
+
+
+body {
+    background-color: var(--midnight-green);
+    color: var(--columbia-blue);
+}
+
+/* Header */
+header {
+    position: fixed;
+    padding: 0 10% 0 5%;
+    margin: 1vh 1vh 0;
+    border-radius: 15px;
+    height: 10vh;
+    width: calc(100% - 2vh);
+    background: radial-gradient(var(--earth-yellow), var(--bege));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 20%;
+    padding: 0;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+/* Main */
+main {
+    padding-top: 11vh;
+    /* border: 2px solid blue; */
+}
+
+main section {
+    height: 89vh;
+}
+
+main table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+main table tr td {
+    width: 100px;
+    height: 100px;
+}
+
+main table tr td img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#artists {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#artists .description {
+    
+}

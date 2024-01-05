@@ -22,7 +22,7 @@
     --bege: #E9CEA6;
 }
 
-html {
+body {
     background-color: var(--midnight-green);
 }
 
@@ -34,7 +34,6 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    /* background-color: var(--earth-yellow); */
     background: radial-gradient(var(--earth-yellow), var(--bege));
 }
 
