@@ -1,11 +1,6 @@
 /* Import de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-/* Exemplo de uso das fontes:
-    font-family: 'Exo 2', sans-serif;
-    font-family: 'Poppins', sans-serif;
-*/
-
 /* Reset de configurações */
 * {
     box-sizing: border-box;
@@ -20,6 +15,8 @@
     --earth-yellow: #dbad6aff;
     --columbia-blue: #cce6f4ff;
     --bege: #E9CEA6;
+    --fonte-titulo: 'Exo 2', sans-serif;
+    --fonte-texto: 'Poppins', sans-serif;
 }
 
 body {
@@ -47,7 +44,7 @@ main {
 }
 
 main .form {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-texto);
     color: var(--barn-red);
     background: radial-gradient(var(--earth-yellow), var(--bege));
     width: 50%;
@@ -87,7 +84,7 @@ main .form {
     width: 60%;
     font-size: 24px;
     padding: 10px 0;
-    font-family: 'Exo 2', sans-serif;
+    font-family: var(--fonte-titulo);
     color: var(--columbia-blue);
     background-color: var(--sienna);
     border: 2px solid var(--barn-red);

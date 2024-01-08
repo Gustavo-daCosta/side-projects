@@ -20,6 +20,8 @@
     --earth-yellow: #dbad6aff;
     --columbia-blue: #cce6f4ff;
     --bege: #E9CEA6;
+    --fonte-titulo: 'Exo 2', sans-serif;
+    --fonte-texto: 'Poppins', sans-serif;
 }
 
 /* Main */
@@ -52,11 +54,11 @@ main .content {
 }
 
 .text h1 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 64px;
 }
 
 .text p {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonte-texto);
     font-size: 22px;
 }

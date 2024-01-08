@@ -1,82 +1,185 @@
 /* Import de fontes */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 /* Reset de configurações */
 * {
-    box-sizing: border-box;
-    padding: 0; margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Variáveis */
 :root {
-    --barn-red: #691e06ff;
-    --sienna: #8f250cff;
-    --midnight-green: #1e555cff;
-    --earth-yellow: #dbad6aff;
-    --columbia-blue: #cce6f4ff;
-    --bege: #E9CEA6;
+  --barn-red: #691e06ff;
+  --sienna: #8f250cff;
+  --midnight-green: #1e555cff;
+  --earth-yellow: #dbad6aff;
+  --columbia-blue: #cce6f4ff;
+  --bege: #e9cea6;
+  --fonte-titulo: "Exo 2", sans-serif;
+  --fonte-texto: "Poppins", sans-serif;
 }
 
-
 body {
-    background-color: var(--midnight-green);
-    color: var(--columbia-blue);
+  background-color: var(--midnight-green);
+  color: var(--columbia-blue);
 }
 
 /* Header */
 header {
-    position: fixed;
-    padding: 0 10% 0 5%;
-    margin: 1vh 1vh 0;
-    border-radius: 15px;
-    height: 10vh;
-    width: calc(100% - 2vh);
-    background: radial-gradient(var(--earth-yellow), var(--bege));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0 10% 0 5%;
+  margin: 1vh 1vh 0;
+  border-radius: 15px;
+  height: 10vh;
+  width: calc(100% - 2vh);
+  background: radial-gradient(var(--earth-yellow), var(--bege));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo {
-    width: 20%;
-    padding: 0;
-    border-collapse: collapse;
-    margin: 0;
+  width: 20%;
+  padding: 0;
+  border-collapse: collapse;
+  margin: 0;
 }
 
 /* Main */
-main {
-    padding-top: 11vh;
-    /* border: 2px solid blue; */
-}
-
 main section {
-    height: 89vh;
+  height: 89vh;
 }
 
 main table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
 }
 
-main table tr td {
-    width: 100px;
-    height: 100px;
+table tr td {
+  width: 8vw;
+  height: 8vw;
+  position: relative;
 }
 
-main table tr td img {
-    display: block;
-    height: 100%;
-    width: 100%;
+table tr td img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
-#artists {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+table tr td .position-tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2% 2% 1% 3%;
+  display: inline-block;
+  font-family: var(--fonte-texto);
 }
 
-#artists .description {
-    
+#artists, #albuns, #musics {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
+
+.description {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description .description__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.description .description__text h1 {
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  font-size: 64px;
+}
+
+.description .description__text p {
+  font-family: var(--fonte-texto);
+}
+
+.description .description__share {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__share .check-button label {
+    font-family: var(--fonte-texto);
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.description__share .check-button input[type="checkbox"]:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.description__share .check-button input[type="checkbox"] {
+  background-color: #ddd;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+
+.description__share .check-button input[type="checkbox"]:checked {
+  background-color: #409fd6;
+  background: var(--barn-red) url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 8px 8px no-repeat;
+}
+
+.description__share img {
+  width: 7%;
+}
+
+.description__share button {
+  border: none;
+  width: 50%;
+  font-size: 24px;
+  padding: 5px 0;
+  border-radius: 8px;
+  background-color: var(--earth-yellow);
+  color: var(--barn-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#albuns {
+    background-color: var(--earth-yellow);
+    color: var(--barn-red);
+}
+
+#albuns table  {
+    color: var(--columbia-blue);
+}
+
+#albuns button {
+    background-color: var(--barn-red);
+    color: var(--earth-yellow);
+}
+
+#albuns button img {
+    filter: invert(100%);
+}/* Remover após a troca de cor do ícone */
+
+/* Todo:
+- Trocar cor do icone de download
+*/
