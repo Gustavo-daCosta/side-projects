@@ -1,0 +1,79 @@
+/* Import de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/* Reset de configurações */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Variáveis */
+:root {
+  --barn-red: #691e06ff;
+  --sienna: #8f250cff;
+  --midnight-green: #1e555cff;
+  --earth-yellow: #dbad6aff;
+  --columbia-blue: #cce6f4ff;
+  --bege: #e9cea6;
+  --fonte-titulo: "Exo 2", sans-serif;
+  --fonte-texto: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--midnight-green);
+  color: var(--columbia-blue);
+}
+
+/* Header */
+header {
+  padding: 0 10% 0 5%;
+  margin: 1vh 1vh 0;
+  border-radius: 15px;
+  height: 10vh;
+  width: calc(100% - 2vh);
+  background: radial-gradient(var(--earth-yellow), var(--bege));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 20%;
+  padding: 0;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+/* Main */
+main section {
+  height: 89vh;
+}
+
+#artists, #albuns, #musics {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#albuns {
+    background-color: var(--earth-yellow);
+    color: var(--barn-red);
+}
+
+#albuns table  {
+    color: var(--columbia-blue);
+}
+
+#albuns button {
+    background-color: var(--barn-red);
+    color: var(--earth-yellow);
+}
+
+#albuns button img {
+    filter: invert(100%);
+}/* Remover após a troca de cor do ícone */
+
+/* Todo:
+- Trocar cor do icone de download
+*/
