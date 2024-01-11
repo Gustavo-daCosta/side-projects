@@ -1,76 +1,77 @@
 .description {
-    height: 100%;
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .description .description__text {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .description .description__text h1 {
-    font-family: var(--fonte-titulo);
-    text-align: center;
-    font-size: 64px;
-  }
-  
-  .description .description__text p {
+  height: 89vh;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+
+.description .description__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.description .description__text h1 {
+  font-family: var(--fonte-titulo);
+  text-align: center;
+  font-size: 64px;
+}
+
+.description .description__text p {
+  font-family: var(--fonte-texto);
+}
+
+.description .description__share {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__share .check-button label {
     font-family: var(--fonte-texto);
-  }
-  
-  .description .description__share {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .description__share .check-button label {
-      font-family: var(--fonte-texto);
-      font-size: 18px;
-      padding-left: 8px;
-  }
-  
-  .description__share .check-button input[type="checkbox"]:focus {
-    outline: 1px solid rgba(0, 0, 0, 0.2);
-  }
-  
-  .description__share .check-button input[type="checkbox"] {
-    background-color: #ddd;
-    border-radius: 2px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    position: relative;
-    top: 5px;
-  }
-  
-  .description__share .check-button input[type="checkbox"]:checked {
-    background-color: #409fd6;
-    background: var(--barn-red) url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 8px 8px no-repeat;
-  }
-  
-  .description__share img {
-    width: 7%;
-  }
-  
-  .description__share button {
-    border: none;
-    width: 50%;
-    font-size: 24px;
-    padding: 5px 0;
-    border-radius: 8px;
-    background-color: var(--earth-yellow);
-    color: var(--barn-red);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-  }
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.description__share .check-button input[type="checkbox"]:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.description__share .check-button input[type="checkbox"] {
+  background-color: #ddd;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+
+.description__share .check-button input[type="checkbox"]:checked {
+  background-color: #409fd6;
+  background: var(--barn-red) url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 8px 8px no-repeat;
+}
+
+.description__share img {
+  width: 7%;
+}
+
+.description__share button {
+  border: none;
+  width: 50%;
+  font-size: 24px;
+  padding: 5px 0;
+  border-radius: 8px;
+  background-color: var(--earth-yellow);
+  color: var(--barn-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}

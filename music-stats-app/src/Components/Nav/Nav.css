@@ -20,42 +20,21 @@
   --fonte-texto: "Poppins", sans-serif;
 }
 
-body {
-  background-color: var(--midnight-green);
-  color: var(--columbia-blue);
+nav {
+    display: flex;
+    gap: 4vw;
 }
 
-/* Main */
-main section {
-  height: 89vh;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.invert {
-    background-color: var(--earth-yellow);
+nav > * {
+    font-size: 18px;
+    font-family: var(--fonte-texto);
+    text-decoration: none;
     color: var(--barn-red);
+    padding: 5px 10px;
+    border-radius: 15px;
 }
 
-.invert table tbody tr td .position-tag {
-    color: var(--bege);
-}
-
-.invert button {
+nav > *:hover {
     background-color: var(--barn-red);
-    color: var(--earth-yellow);
-}
-
-.invert button img {
-    filter: invert(100%);
+    color: var(--bege);
 }

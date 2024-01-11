@@ -12,7 +12,6 @@ const CoverTable = ({data}) => {
                 </td>
             );
         }
-        console.log(row);
         return row;
     }
 
